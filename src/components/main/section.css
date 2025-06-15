@@ -1,0 +1,48 @@
+
+.main-section{
+    /* width: 40rem;   
+    background-color: red;
+    border-radius: 20px; */
+      background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+
+}
+
+
+.fade-slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-btn {
+  animation: pulseOpacity 1s infinite ease-in-out;
+  pointer-events: none; 
+  opacity: 0.6; 
+}
+
+@keyframes pulseOpacity {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* 'w-100 mt-2  ' */
